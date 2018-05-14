@@ -1,0 +1,7 @@
+sidvenugop/TestModule:
+    
+  PkgInclude:
+    - script.sh
+    
+  Exec:
+    - './script.sh'
