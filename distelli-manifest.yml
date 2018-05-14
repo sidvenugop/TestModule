@@ -1,6 +1,6 @@
 svenugopalan/TestModule:
 
-Env:
+  Env:
     - Test: '"This is an example manifest environment variable."'
     
   PkgInclude:
