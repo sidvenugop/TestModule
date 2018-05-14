@@ -4,12 +4,12 @@ svenugopalan/TestModule:
     - Test: '"This is an example manifest environment variable."'
     
   PreInstall:
-    - echo "Begin PreInstall"
-    - chmod +x /distelli/envs/Test/bin/distelli-run.sh  
+    - echo "Begin PreInstall" 
     
   PkgInclude:
     - script.sh
   Exec:
+    - chmod +x /distelli/envs/Test/bin/distelli-run.sh
     - './script.sh'
     
     
