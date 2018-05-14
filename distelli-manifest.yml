@@ -1,10 +1,14 @@
 svenugopalan/TestModule:
 
+  build:
+  ci: 
+    - echo 'CI Running'
+    - chmod +x /distelli/envs/Test/script.sh  #make the file executable
+    - ./script.sh  #execute the script
   Env:
     - Test: '"This is an example manifest environment variable."'
     
   PkgInclude:
     - script.sh
     
-  Exec:
-    - './script.sh'
+  
