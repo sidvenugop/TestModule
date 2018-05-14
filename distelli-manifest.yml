@@ -10,6 +10,7 @@ svenugopalan/TestModule:
     - script.sh
   Exec:
     - chmod +x /distelli/envs/Test/bin/distelli-run.sh
+    - chmod +x /distelli/envs/Test/script.sh
     - './script.sh'
     
     
