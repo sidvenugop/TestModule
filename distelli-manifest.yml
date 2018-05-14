@@ -1,4 +1,7 @@
 svenugopalan/TestModule:
+
+Env:
+    - Test: '"This is an example manifest environment variable."'
     
   PkgInclude:
     - script.sh
