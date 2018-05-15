@@ -2,8 +2,12 @@ svenugopalan/TestModule:
   
   PreInstall:
     - echo "Begin Preinstall"
+    
+  Build:
+    - echo"Checking for Distelli Agent"
     - if [ -d "/home/distelli" ]; then
     - echo "Distelli Agent Already Installed"
+
 
 
   
