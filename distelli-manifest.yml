@@ -7,14 +7,17 @@ svenugopalan/TestModule:
     - echo "Begin PreInstall" 
     - green=`tput setaf 2`
     - reset=`tput sgr0`
+    - cd ~
     - if [ -d "/home/distelli" ]; then
     - echo "Distelli Agent Already ${green}Installed ${reset}"
-    - else echo "DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'" > /etc/distelli.yml
+    - else 
+    - vim script.sh
+    - echo "DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'" > /etc/distelli.yml
     - echo "DistelliSecretKey: 'jzjjpiemik98mj9i5aubwvzj03oftx2gjz4cr'" >> /etc/distelli.yml
     - echo "Environments:" >> /etc/distelli.yml
     - echo "  - dev_lab" >> /etc/distelli.yml
-    - cd ~
-    - wget -qO- https://pipelines.puppet.com/download/client | sh
+    - sudo chmod +x script.sh
+    - sudo wget -qO- https://pipelines.puppet.com/download/client | sh
     - /usr/local/bin/distelli agent install -conf /etc/distelli.yml
     - /usr/local/bin/distelli login -conf /etc/distelli.yml
     - fi
