@@ -12,10 +12,11 @@ svenugopalan/TestModule:
     - echo "Distelli Agent Already ${green}Installed ${reset}"
     - else 
     - vim /etc/distelli.yml
-   DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'
-   DistelliSecretKey: 'jzjjpiemik98mj9i5aubwvzj03oftx2gjz4cr'
-   Environments:
-     - Test
+  
+  DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'
+  DistelliSecretKey: 'jzjjpiemik98mj9i5aubwvzj03oftx2gjz4cr'
+  Environments:
+    - Test
     - sudo wget -qO- https://pipelines.puppet.com/download/client | sh
     - /usr/local/bin/distelli agent install -conf /etc/distelli.yml
     - /usr/local/bin/distelli login -conf /etc/distelli.yml
