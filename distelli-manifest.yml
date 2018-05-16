@@ -4,8 +4,8 @@ svenugopalan/TestModule:
   Env:
     - EXAMPLE: 'Test'
     
-  PreBuild:
-    - chmod +x /distelli/envs/Test/script.sh
+  PreInstall:
+    - chmod +x /distelli/envs/Test/bin/distelli-run.sh
   PkgInclude:
     - script.sh
   Exec:
