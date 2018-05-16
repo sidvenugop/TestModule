@@ -5,11 +5,11 @@ svenugopalan/TestModule:
     - EXAMPLE: 'Test'
     
   PreInstall:
-    - chmod +x /distelli/envs/Test/bin/distelli-run.sh
-  PkgInclude:
-    - script.sh
-  Exec:
-    - './script.sh'
+    - if [ -d "/home/distelli" ]; then
+    -   echo "Distelli Agent Already Installed"
+    - else
+    -   echo "Installing Distelli Agent"
+    -fi
     
   
 
