@@ -1,9 +1,12 @@
 svenugopalan/TestModule:
   
-  PreInstall:
-    - echo "Begin Preinstall"
-    - if [ -d "/home/distelli" ]; then
-    - echo "Distelli Agent Already ${green}Installed ${reset}"
+ 
+  Env:
+    - EXAMPLE: '\This is an example manifest environment variable.\'
+  PkgInclude:
+    - script.sh
+  Exec:
+    - './script.sh'
     
   
 
