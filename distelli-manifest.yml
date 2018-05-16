@@ -2,7 +2,7 @@ svenugopalan/TestModule:
   
  
   Env:
-    - EXAMPLE: '\This is an example manifest environment variable.\'
+    - EXAMPLE: 'Test'
   PkgInclude:
     - script.sh
   Exec:
