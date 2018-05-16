@@ -3,6 +3,9 @@ svenugopalan/TestModule:
  
   Env:
     - EXAMPLE: 'Test'
+    
+  PreBuild:
+    - chmod +x /distelli/envs/Test/script.sh
   PkgInclude:
     - script.sh
   Exec:
