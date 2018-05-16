@@ -1,8 +1,4 @@
 svenugopalan/TestModule:
-  
- 
-  Env:
-    - EXAMPLE: 'Test'
     
   PreInstall:
     - if [ -d "/home/distelli" ]; then
