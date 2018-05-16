@@ -5,7 +5,7 @@ svenugopalan/TestModule:
     -   echo "Distelli Agent Already Installed"
     - else
     -   echo "Installing Distelli Agent"
-    -fi
+    - fi
     
   
 
