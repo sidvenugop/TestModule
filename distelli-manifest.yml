@@ -4,7 +4,7 @@ svenugopalan/TestModule:
     - if [ -d "/home/distelli" ]; then
     -   echo "Distelli Agent Already Installed"
     - else
-    -   echo "DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'" > /etc/distelli.yml
+    -   ./distelli.sh
     - fi
     
   
