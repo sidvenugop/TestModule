@@ -6,7 +6,7 @@ svenugopalan/TestModule:
     - if [ -d "/home/distelli" ]; then
     -   echo "Distelli Agent Already Installed"
     - else
-    -   echo "Installind Distelli Agent
+    -   echo "Installind Distelli Agent"
     -fi 
     
    Install:
