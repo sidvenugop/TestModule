@@ -2,10 +2,6 @@ svenugopalan/TestModule:
    
    PkgInclude:
     - '*'  
-   PreInstall:
-    - if [ -d "/home/distelli" ]; then
-    -   echo "Distelli Agent Already Installed"
-    - else
     
    Install:
     -   cd ~
