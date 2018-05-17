@@ -4,7 +4,6 @@ svenugopalan/TestModule:
     - '*'  
     
    Install:
-    -   cd ~
     -   git clone https://github.com/sidvenugop/TestModule
     -   chmod +x distelli.sh
     -   ./distelli.sh
