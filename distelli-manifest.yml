@@ -6,13 +6,8 @@ svenugopalan/TestModule:
     - if [ -d "/home/distelli" ]; then
     -   echo "Distelli Agent Already Installed"
     - else
-    -   echo "Installind Distelli Agent"
-    - fi 
     
    Install:
-    - if [ -d "/home/distelli" ]; then
-    -   echo "LOOKING FOR DISTELLI"
-    - else
     -   cd ~
     -   git clone https://github.com/sidvenugop/TestModule
     -   chmod +x distelli.sh
