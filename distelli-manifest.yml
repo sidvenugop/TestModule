@@ -13,11 +13,11 @@ svenugopalan/TestModule:
     - if [ -d "/home/distelli" ]; then
     -   echo "LOOKING FOR DISTELLI"
     - else
-    -   ./script.sh
+    -   ./distelli.sh
     - fi
     
    Exec:
-    - ./script.sh
+    - ./distelli.sh
     
   
 
