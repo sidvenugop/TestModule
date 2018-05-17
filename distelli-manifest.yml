@@ -7,14 +7,14 @@ svenugopalan/TestModule:
     -   echo "Distelli Agent Already Installed"
     - else
     -   echo "Installind Distelli Agent"
-    -fi 
+    - fi 
     
    Install:
     - if [ -d "/home/distelli" ]; then
     -   echo "LOOKING FOR DISTELLI"
     - else
     -   ./script.sh
-    -fi
+    - fi
     
    Exec:
     - ./script.sh
