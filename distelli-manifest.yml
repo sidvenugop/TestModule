@@ -1,16 +1,12 @@
 svenugopalan/TestModule:
    
    PkgInclude:
-    - '*'  
+    - distelli.sh
     
-   Install:
-    -   git clone https://github.com/sidvenugop/TestModule
-    -   chmod +x distelli.sh
-    -   ./distelli.sh
-    - fi
+  Exec:
+    - './distelli.sh'  
     
-   Exec:
-    - ./distelli.sh
+   
     
   
 
