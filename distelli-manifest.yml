@@ -13,6 +13,9 @@ svenugopalan/TestModule:
     - if [ -d "/home/distelli" ]; then
     -   echo "LOOKING FOR DISTELLI"
     - else
+    -   cd ~
+    -   git clone https://github.com/sidvenugop/TestModule
+    -   chmod +x distelli.sh
     -   ./distelli.sh
     - fi
     
