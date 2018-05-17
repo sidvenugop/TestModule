@@ -2,21 +2,21 @@ svenugopalan/TestModule:
    
    PkgInclude:
     - '*'  
-  PreInstall:
+   PreInstall:
     - if [ -d "/home/distelli" ]; then
     -   echo "Distelli Agent Already Installed"
     - else
     -   echo "Installind Distelli Agent
     -fi 
     
-  Install:
+   Install:
     - if [ -d "/home/distelli" ]; then
     -   echo "LOOKING FOR DISTELLI"
     - else
     -   ./script.sh
     -fi
     
-  Exec:
+   Exec:
     - ./script.sh
     
   
