@@ -1,19 +1,23 @@
 svenugopalan/TestModule:
-    
+   
+   PkgInclude:
+    - '*'  
   PreInstall:
     - if [ -d "/home/distelli" ]; then
     -   echo "Distelli Agent Already Installed"
     - else
-    -   touch /etc/distelli.yml
-  DistelliAccessToken: '9EMWDPQZ9KVJ0E5242E54D9I3'
-  DistelliSecretKey: 'jzjjpiemik98mj9i5aubwvzj03oftx2gjz4cr'
-  Environments:
-    - Test
-    -   cd ~
-    -   wget -qO- https://pipelines.puppet.com/download/client | sh
-    -   /usr/local/bin/distelli agent install -conf /etc/distelli.yml
-    -   /usr/local/bin/distelli login -conf /etc/distelli.yml
-    - fi
+    -   echo "Installind Distelli Agent
+    -fi 
+    
+  Install:
+    - if [ -d "/home/distelli" ]; then
+    -   echo "LOOKING FOR DISTELLI"
+    - else
+    -   ./script.sh
+    -fi
+    
+  Exec:
+    - ./script.sh
     
   
 
