@@ -1,9 +1,10 @@
 svenugopalan/TestModule:
-   
-   PkgInclude:
+  Env:
+    - EXAMPLE: '"This is an example manifest environment variable."' 
+  PkgInclude:
     - distelli.sh
     
-   Start:
+  Start:
     - './distelli.sh'  
     
    
