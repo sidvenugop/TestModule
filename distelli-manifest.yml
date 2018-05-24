@@ -3,7 +3,7 @@ svenugopalan/TestModule:
    PkgInclude:
     - distelli.sh
     
-   Exec:
+   Start:
     - './distelli.sh'  
     
    
